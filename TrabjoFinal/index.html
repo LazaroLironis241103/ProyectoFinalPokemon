@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sitio Web Pokémon</title>
+    <link rel="icon" type="image/x-icon" href="img/pokeball.png" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- Header -->
+    <header id="encabezado">
+        <div class="header-container">
+            <img src="img/pokemon-logo.png" alt="Pokémon" class="logo" />
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+            <nav id="nav">
+                <ul class="nav-links">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#content">Contenido</a></li>
+                    <li><a href="#api-section">API</a></li>
+                    <li><a href="#form">Contacto</a></li>
+                </ul>
+            </nav>
+            <div id="overlay"></div>
+        </div>
+    </header>
+
+    <!-- Sección Principal -->
+    <section id="home">
+        <div class="home-container">
+            <h2>¡Bienvenidos al Mundo Pokémon!</h2>
+            <p>Este es mi sitio, espero que puedan disfrutarlo.</p>
+        </div>
+    </section>
+
+    <!-- Sección Contenido -->
+    <section id="content">
+        <div class="container">
+            <h2>La Historia de Pokémon</h2>
+            <p>
+                Todo empezó con Ash Ketchum, un joven entrenador de Pueblo Paleta que sueña con convertirse en Maestro Pokémon.
+                Acompañado de su inseparable Pikachu, viaja por distintas regiones, enfrentando desafíos, ganando medallas de gimnasio y participando en ligas Pokémon.
+            </p>
+            <p>
+                La serie se ha dividido en varias temporadas, cada una ambientada en una región distinta del mundo Pokémon, como Kanto, Johto, Hoenn, Sinnoh, Unova, Kalos, Alola y Galar, entre otras.
+                En cada una, Ash conoce nuevos compañeros, captura Pokémon diferentes y se enfrenta a nuevos rivales.
+            </p>
+            <p>
+                Después de más de 25 años de aventuras, Ash logró convertirse en campeón mundial, marcando el cierre de su historia principal.
+                Actualmente, la serie continúa con nuevos protagonistas y una nueva generación, explorando el mundo Pokémon desde otras perspectivas.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección API -->
+    <section id="api-section">
+        <div class="api-container">
+            <h2>Busca un Pokémon en nuestra Pokedex</h2>
+            <input type="text" id="pokemonInput" placeholder="Ej: pikachu o bulbasaur" />
+            <div id="api-data"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="contact-box">
+                <h3>Contacto</h3>
+                <form id="form" name="form" method="get">
+                    <div class="form-group">
+                      <label for="nombre">Nombre</label>
+                      <input type="text" id="nombre" name="nombre" required />
+                      <p id="mensaje1"></p>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Correo electrónico</label>
+                      <input type="email" id="email" name="email" required />
+                      <p id="mensaje2"></p>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Contraseña</label>
+                      <input type="password" id="password" name="password" required />
+                      <p id="mensaje3"></p>
+                  </div>
+                  <div class="form-group">
+                      <label for="mensaje">Mensaje:</label>
+                      <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                  </div>
+                  <button type="submit" id="submit">Enviar</button>
+                  <p id="mensaje4"></p>
+            </form>
+        </div>
+
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/lalo_lironis/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/lalo_lironis" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/LazaroLironis241103" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/lazaro-lironis-5925b1276/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p>© 2025 Sitio Pokémon. Proyecto creado por Lázaro Lironis.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
